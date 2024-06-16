@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progressBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/cabecalho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#049c3c"
+            android:ems="10"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="IMPORTAÇÃO CADASTRO"/>
+
+        <Button
+            android:id="@+id/importar"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginBottom="50sp"
+            android:textSize="30sp"
+            android:text="CARGA INVENTÁRIO"
+            />
+
+
+        <Button
+            android:id="@+id/importarFindprice"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginStart="20sp"
+            android:textSize="30sp"
+            android:text="LIVRO PREÇOS" />
+      
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

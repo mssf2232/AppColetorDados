@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyColetor" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#049c3c</item>
+        <item name="colorPrimaryDark">#049c3c</item>
+        <item name="colorAccent">#049c3c</item>
+
+
+    </style>
+
+    <style name="Theme.MyColetor" parent="Base.Theme.MyColetor" />
+
+</resources>

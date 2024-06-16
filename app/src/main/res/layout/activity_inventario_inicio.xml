@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progressBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InventarioInicioActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+        <TextView
+            android:id="@+id/cabecalho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#049c3c"
+            android:ems="10"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="Inventário"/>
+
+
+        <RadioGroup
+            android:id="@+id/radiolocalinvenatrio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonDeposito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#049c3c"
+                android:ems="10"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:text="DEPOSITO" />
+
+            <RadioButton
+                android:id="@+id/radioButtonLoja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#049c3c"
+                android:ems="10"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:text="LOJA" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#049c3c"
+            android:ems="10"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:text="Área"/>
+
+        <EditText
+            android:id="@+id/area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:ems="10"
+            android:maxLength="2"
+            android:hint="Digite a Area"
+            android:inputType="number|numberSigned"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/text_coleta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#049c3c"
+            android:ems="10"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="Nº Coleta"/>
+
+        <EditText
+            android:id="@+id/coleta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:hint="Digite Nº Coleta"
+            android:maxLength="1"
+            android:inputType="number|numberSigned"
+            android:textAlignment="center" />
+
+
+        <Button
+            android:id="@+id/btn_avancar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:background="#000FFF"
+            android:text="Avançar" />
+
+
+
+        <Button
+            android:id="@+id/btn_voltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:background="#000FFF"
+            android:text="Voltar" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

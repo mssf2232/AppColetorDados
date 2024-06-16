@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progressBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InventarioActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+        <TextView
+            android:id="@+id/cabecalho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#049c3c"
+            android:ems="10"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/cabecalho2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#049c3c"
+            android:ems="10"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/codigoEAN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Codigo Ean"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:maxLength="15"
+            android:layout_marginStart="5dp"
+            android:inputType="number|numberSigned"
+            android:textAlignment="center"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/border">
+
+        </EditText>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/codigoInterno"
+            android:layout_width="200sp"
+            android:layout_height="48sp"
+            android:ems="10"
+            android:hint="Cod.Interno"
+            android:textSize="28sp"
+            android:maxLength="15"
+            android:textStyle="bold"
+           android:inputType="number|numberSigned"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/embalagem"
+            android:layout_width="208dp"
+            android:layout_height="48sp"
+            android:ems="10"
+            android:hint="Embalagem"
+            android:inputType="text"
+            android:maxLength="15"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="27sp"
+            android:hint="Descrição"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/border"/>
+
+        <EditText
+            android:id="@+id/quantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Quantidade"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:maxLength="15"
+            android:inputType="number|numberSigned"
+            android:textAlignment="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/border">
+
+        </EditText>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_limpar"
+                android:layout_width="135dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:background="#000FFF"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text="LIMPAR" />
+
+
+
+            <Button
+                android:id="@+id/btn_inserir"
+                android:layout_width="125dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+
+                android:padding="0dp"
+                android:singleLine="true"
+                android:background="#000FFF"
+                android:text="INSERIR" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="125dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+
+                android:padding="0dp"
+                android:singleLine="true"
+                android:backgroundTint="#FF0000"
+
+                android:layout_marginTop="10dp"
+                android:background="@android:color/black"
+                android:text="APAGAR" />
+
+
+
+        </LinearLayout>
+
+
+
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+
+            android:layout_height="199dp"
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_exportar"
+                android:layout_width="135dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+
+                android:padding="0dp"
+                android:singleLine="true"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="#000FFF"
+                android:text="EXPORTAR" />
+
+            <Button
+                android:id="@+id/btn_scanner"
+                android:layout_width="125dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#000FFF"
+
+                android:padding="0dp"
+                android:singleLine="true"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="CÂMERA" />
+
+            <Button
+                android:id="@+id/btn_iniciar"
+                android:layout_width="125dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:textSize="22sp"
+
+                android:padding="0dp"
+                android:singleLine="true"
+                android:textStyle="bold"
+
+                android:layout_marginTop="10dp"
+                android:background="#000FFF"
+                android:text="INICIAR" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
